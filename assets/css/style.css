@@ -1,108 +1,145 @@
 :root {
-    --html-color: #e44d26;
-    --css-color: #1572b6;
-  }
-  
-  html {
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: sans-serif;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-  }
-  
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-  }
-
-body{
-    margin: 0;
+  --html-color: #e44d26;
+  --css-color: #1572b6;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-.hero{
-    height: 100vh;
-    top: 4rem;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    background: rgb(40,40,40);
-background: linear-gradient(90deg, rgba(40,40,40,1) 17%, rgba(116,116,116,1) 50%, rgba(139,139,139,1) 100%);
-   position: sticky;
-    top: 0;
-    height: 5.5rem;
+body {
+  margin: 0;
 }
 
-.header-logo{
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-    margin-left: 2rem;
+img {
+  width: 20rem;
+  height: auto;
 }
 
-.logo{
-    width: 3rem;
-    height: 3rem;
+h1 {
+  margin: 0;
 }
 
-.logo-name{
-    color: white;
-    width: 6rem;
-    margin: 1rem;
-    line-height: 2rem;
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(40, 40, 40);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 40, 40, 1) 17%,
+    rgba(116, 116, 116, 1) 50%,
+    rgba(139, 139, 139, 1) 100%
+  );
+  position: sticky;
+  top: 0;
+  height: 5.5rem;
 }
 
-.navbar{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-right: 3rem;
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 2rem;
+  text-decoration: none;
 }
 
-.navlink{
-    text-decoration: none;
-    background-color: transparent;
-    padding: 1rem;
-    border-radius: .5rem;
-    color: white;
-    margin: 2rem;
-    transition: background-color .15s linear, color .15s linear, border .15s linear;
+.logo {
+  width: 3rem;
+  height: 3rem;
 }
 
-.navlink:hover{
-    border-bottom: medium solid rgb(41, 41, 41);
-    border-right: thin solid rgb(41, 41, 41);
-    color: black;
-    
+.logo-name {
+  color: rgb(238, 238, 238);
+  width: 6rem;
+  margin: 1rem;
+  line-height: 2rem;
+  color: #b6f503;
 }
 
-.contenedor{
-    margin: 4rem;
-    height: 50rem;
-    scroll-margin-top: 8rem;
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 3rem;
 }
 
-.btn-cv{
-    text-decoration: none;
-    background-color: grey;
-    padding: 1rem;
-    border-radius: .5rem;
-    color: white;
-    margin: 2rem;
-    transition: background-color .15s linear, color .15s linear;
+.navlink {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  margin: 2rem;
+  transition: background-color 0.15s linear, color 0.15s linear,
+    border 0.15s linear;
 }
 
-.btn-cv:hover{
-    color: black;
-    background-color: lightgray;
-    border-bottom: medium solid rgb(41, 41, 41);
-    border-right: thin solid rgb(41, 41, 41);
+.navlink:hover,
+.header-logo:hover {
+  /* border-bottom: medium solid #b6f503;
+  border-right: thin solid #b6f503; */
+  color: #b6f503;
+  /* font-weight: bold; */
+  text-shadow: #b6f503 0.5px 0.5px 4px;
+}
+
+.contenedor {
+  height: 50rem;
+  scroll-margin-top: 8rem;
+}
+
+.btn-cv {
+  text-decoration: none;
+  background-color: grey;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  margin: 2rem;
+  transition: background-color 0.15s linear, color 0.15s linear;
+}
+
+.btn-cv:hover {
+  color: black;
+  background-color: lightgray;
+  border-bottom: medium solid rgb(41, 41, 41);
+  border-right: thin solid rgb(41, 41, 41);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: rgb(139, 139, 139);
+  background: radial-gradient(
+    circle,
+    rgba(139, 139, 139, 1) 16%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card-clip {
+  width: 20rem;
+  height: 20rem;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  border: thin solid black;
 }
