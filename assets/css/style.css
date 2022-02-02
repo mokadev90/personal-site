@@ -220,7 +220,7 @@ p {
 }
 
 .cv {
-  background-color: rgb(209, 209, 209);
+  background-color: #c5c5c5;
 }
 
 .cv h2 {
@@ -234,7 +234,7 @@ p {
 }
 
 .proyectos {
-  background-color: rgb(238, 238, 238);
+  background-color: #d3d2d2;
 }
 
 .proyecto {
@@ -286,4 +286,47 @@ p {
 .proyecto img {
   width: 24rem;
   height: 15rem;
+}
+
+.ahora {
+  background-color: #dfdfdf;
+}
+
+.contacto {
+  background-color: #f1f1f1;
+}
+
+.contacto h3 {
+  margin-left: 3rem;
+  margin-right: 10rem;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes svg {
+  width: 2rem;
+  margin: 0.2rem;
+}
+
+.red a {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  color: #b6f503;
+  background-color: rgb(71, 71, 71);
+  background: linear-gradient(
+    0deg,
+    rgba(71, 71, 71, 0.7875525210084033) 28%,
+    rgba(38, 38, 38, 1) 100%
+  );
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.red span {
+  margin: 0.2rem;
 }
