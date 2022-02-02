@@ -14,23 +14,22 @@
     <sergey-import src="header" />
     <div id="home" class="hero contenedor">
         <div class="hero-text">
+            <h2>Moka Dev</h2>
+        </div>
+        <!-- <img src="/assets/logo2.svg"> -->
+        <div class="card">
+            <img src="assets/foto-circle.png" class="card-img" />
             <sergey-import src="pages/home.md" as="markdown" />
         </div>
-        <img src="/assets/logo2.svg">
-        <div class="card">
-            <div class="card-clip">
-                <img src="assets/foto.jpeg" class="card-img" />
-            </div>
-        </div>
     </div>
-    <div class="contenedor">
-        <sergey-import src="pages/home.md" as="markdown" />
-    </div>
-    <div id="cv" class="contenedor">
+    <div id="cv" class="cv contenedor">
         <sergey-import src="pages/cv.md" as="markdown" />
     </div>
-    <div id="proyectos" class="contenedor">
+    <div id="proyectos" class="proyectos contenedor">
         <h2>Proyectos</h2>
+        <div class="proyecto financeapp">
+            <sergey-import src="proyectos/financeapp.md" as="markdown" />
+        </div>
     </div>
     <div id="ahora" class="contenedor">
         <sergey-import src="pages/ahora.md" as="markdown" />
